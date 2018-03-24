@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -122,6 +123,20 @@ namespace pocorall.SCM_Notifier
 				}
 			UpdateTray (true);
 		}
+
+	    private void OpenKraken()
+	    {
+	        var selectedIndex = listViewFolders.SelectedIndices[0];
+	        var folder = folders[selectedIndex].Path;
+
+	        if (File.Exists (folders[selectedIndex].Path))
+	            folder = Path.GetDirectoryName (folder);
+
+	        var process = $@"{Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)}\gitkraken\update.exe";
+
+	        Process.Start(process,
+	            $"--processStart=gitkraken.exe --process-start-args=\"-p {folder}\"");
+	    }
 
 
 		private void OpenFolder ()

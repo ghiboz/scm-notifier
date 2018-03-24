@@ -1484,5 +1484,10 @@ namespace pocorall.SCM_Notifier
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
                 e.Effect = DragDropEffects.Copy;
         }
-	}
+
+        private void gitKrakenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenKraken();
+        }
+    }
 }
