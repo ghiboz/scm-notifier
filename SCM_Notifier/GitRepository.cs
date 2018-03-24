@@ -200,6 +200,7 @@ namespace pocorall.SCM_Notifier
                 while ((line = sr.ReadLine()) != null)
                 {  
                     if (line.StartsWith("From")) continue;
+                    if (line.ToLower().Contains("warning")) continue;
                     if (!regexUpToDate.IsMatch(line)) return true;
                 }
             }
