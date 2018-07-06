@@ -168,8 +168,9 @@ namespace pocorall.SCM_Notifier
 
 		public static bool IsSettingsOK()
 		{
-            return (File.Exists(SvnPath) && File.Exists(TortoiseSvnPath)) || (File.Exists(GitPath) && File.Exists(GitUIPath));
-		}
+            //return (File.Exists(SvnPath) && File.Exists(TortoiseSvnPath)) || (File.Exists(GitPath) && File.Exists(GitUIPath));
+            return (File.Exists(GitPath));
+        }
 
 
 		public static void SaveSettings ()
