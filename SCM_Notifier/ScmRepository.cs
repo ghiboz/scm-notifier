@@ -206,7 +206,7 @@ namespace pocorall.SCM_Notifier
         protected static ExecuteResult ExecuteProcess(string executionFile, string workingPath, string arguments, bool waitForExit, bool lowPriority)
         {
             SetEnvironmentVariable();
-            ProcessStartInfo psi = new ProcessStartInfo
+           ProcessStartInfo psi = new ProcessStartInfo
             {
                 FileName = executionFile,
                 Arguments = arguments,

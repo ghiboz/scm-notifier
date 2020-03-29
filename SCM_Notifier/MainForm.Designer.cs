@@ -274,7 +274,7 @@ namespace pocorall.SCM_Notifier
             this.toolStripMenuItem4,
             this.settingsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.toolsToolStripMenuItem.Text = "&Tools";
             // 
             // updateAllToolStripMenuItem
@@ -442,7 +442,7 @@ namespace pocorall.SCM_Notifier
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3});
-            this.statusStrip.Location = new System.Drawing.Point(0, 118);
+            this.statusStrip.Location = new System.Drawing.Point(0, 473);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(504, 22);
             this.statusStrip.TabIndex = 10;
@@ -623,7 +623,7 @@ namespace pocorall.SCM_Notifier
             this.listViewFolders.Location = new System.Drawing.Point(0, 53);
             this.listViewFolders.MultiSelect = false;
             this.listViewFolders.Name = "listViewFolders";
-            this.listViewFolders.Size = new System.Drawing.Size(504, 65);
+            this.listViewFolders.Size = new System.Drawing.Size(504, 420);
             this.listViewFolders.SmallImageList = this.imageListFolderStatus;
             this.listViewFolders.TabIndex = 0;
             this.listViewFolders.UseCompatibleStateImageBehavior = false;
@@ -638,7 +638,7 @@ namespace pocorall.SCM_Notifier
             // MainForm
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(504, 140);
+            this.ClientSize = new System.Drawing.Size(504, 495);
             this.Controls.Add(this.listViewFolders);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip);

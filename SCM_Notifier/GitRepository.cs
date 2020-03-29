@@ -199,6 +199,7 @@ namespace pocorall.SCM_Notifier
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {  
+                    if (line.StartsWith("POST")) continue;
                     if (line.StartsWith("From")) continue;
                     if (line.ToLower().Contains("warning")) continue;
                     if (!regexUpToDate.IsMatch(line)) return true;
